@@ -4,8 +4,10 @@
   "description": "some mern app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon index"
+    "start": "node index",
+    "server": "nodemon index",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Veronika and Anna",
   "license": "ISC",
